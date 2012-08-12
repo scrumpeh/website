@@ -1,0 +1,302 @@
+/****** Tell the browser to render HTML5 elements as block ******/
+article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}
+
+
+
+/*----- RESET SETTINGS -----*/
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul,  
+ol, li, dl, dt, dd, form, a, fieldset, input, th, td  
+{ border: 0; margin: 0; outline: none; padding: 0; }
+
+body  
+{ font-size: 88%; line-height: 18px; }  
+  
+h1, h2, h3, h4, h5, h6  
+{ font-size: 100%; margin: 0 15px; padding: .6em 0; }  
+  
+ul, ol  
+{ list-style: none; }  
+  
+a  
+{ color: black; text-decoration: none; }  
+  
+a:hover  
+{ text-decoration: none; }  
+  
+.floatLeft  
+{ float: left; padding: .5em .5em .5em 0; }  
+  
+.floatRight  
+{ float: rightright; padding: .5em 0 .5em .5em; }
+
+
+
+/*----- BASIC ELEMENT SETTINGS (body, h1-h6, ul, ol, a, p etc) -----*/ 
+body 
+{ background-color: #706C70; font-family: 'Enriqueta', serif; }
+
+header
+{ background-color: green }
+
+h1 
+{ color: #470247; font-family: Helvetica, sans-serif; font-size: 36px; line-height: 36px;
+  text-shadow: 
+  1px 1px 1px #950F95;
+  2px 3px 3px #E564E5;
+  4px 6px 6px #E5A2E5;
+  text-transform: lowercase; }
+
+h2 
+{ font-family: Arial, sans-serif; font-size: 18px; line-height: 18px; }
+
+h3 
+{ font-family: Arial, sans-serif; font-size: 12px; line-height: 18px; }
+
+p, ol, ul, a 
+{ font-size: 12px; line-height: 18px; }
+
+a 
+{ color: #612E61; text-decoration: none; }
+
+ul 
+{ list-style: square; }
+
+ul a 
+{ color: green; text-decoration: none; }
+
+ul a:hover 
+{ color: black; text-decoration: none }
+
+footer 
+{ color: #211F21; /*** this is slightly lighter text than main body ***/ text-align: center; }
+
+footer a 
+{ color: #211F21 }
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol 
+{ background: #958947; color: #211F10; /****** this is very dark yellow, to contrast with the yellow box ******/ }
+
+.onecol a, .twocol a, .threecol a, .fourcol a, .fivecol a, .sixcol a 
+{ color: #211F10; /****** this is very dark yellow, to contrast with the yellow box ******/ }
+
+.row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol
+{ border-style: solid;
+  border-spacing: 100px;  
+  border-color: red;
+  border-width: 10px; }
+
+
+
+/*----- BASIC LAYOUT SETTINGS -----*/
+/* Body settings */
+body 
+{ height: 80%; margin: auto; width: 80% }
+
+/* Header settings (body>header) */
+body header 
+{ height: 100px; margin: 0 auto; position: relative; width: 100%; }
+
+/* Container settings (body>container) */
+body .container 
+{ margin: 0 auto; padding-left: 20px; padding-right: 20px; position: relative; width: 100%; }
+
+/* Row settings (body>container>row) */
+body .row 
+{ margin: 0 auto; min-width: 600px; overflow: hidden; width: 100%; }
+
+/* Footer settings */
+body footer 
+{ bottom: 0; height: 50px; position: absoute, width: 100%; }
+
+/* Headings settings */
+body h1 
+{ margin: 50px 0 auto 0; }
+
+/* Col settings (body-container-row-col) */
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol 
+{ float: left; margin-right: 3.8%; min-height: 1px; }
+
+.row .onecol 
+{ width: 4.85%; }
+
+.row .twocol 
+{ width: 13.45%; }
+
+.row .threecol 
+{ width: 22.05%; }
+
+.row .fourcol 
+{ width: 30.75%; }
+
+.row .fivecol 
+{ width: 39.45%; }
+
+.row .sixcol 
+{ width: 48%; }
+
+.row .sevencol 
+{ width: 56.75%; }
+
+.row .eightcol 
+{ width: 65.4%; }
+
+.row .ninecol 
+{ width: 74.05%; }
+
+.row .tencol 
+{ width: 82.7%; }
+
+.row .elevencol 
+{ width: 91.35%; }
+
+.row .twelvecol 
+{ width: 100%; }
+
+
+
+/*----- INNER CONTENT SETTINGS -----*/ 
+
+/* Header settings */
+header img 
+{ height: 100px; left: 0; position: relative; top: 0; width: 100px; }
+
+aside 
+{ float: right; min-width: 500px; position: relative; top: 60px; width: 80%; } 
+
+nav 
+{ float: right; position: absolute; width: 100%; }
+
+nav ul 
+{ list-style: none; width: 80%; }
+
+nav ul li
+{ background: #950F95;
+  border: solid #950F95 2px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 14px;  
+  height: 40px;
+  line-height: 36px; 
+  margin-right: 20px; 
+  text-align: center;  
+  width: 80px; }
+
+nav ul li a 
+{ color: #CAC3CA; text-decoration: none; }
+  
+nav ul li a:hover 
+{ color: #211F21; text-shadow: #612E61 2px; }  
+
+hr.style-two {
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    border: 0;
+    height: 5px;
+    top: 200px;
+}
+
+hr.style-four {
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+    height: 12px;
+}
+  
+.fourcol h2 {
+  background: #6D5D03;
+  padding: 10px 20px;
+  margin-left: -20px;
+  margin-top: 18px;
+  position: relative;
+  text-shadow: 0 10px 1px 0 #2F2E29;
+  width: 70%;
+  -moz-box-shadow: 1px 1px 3px #292929;
+  -webkit-box-shadow: 1px 1px 3px #292929;
+  color: #DADFD9;
+}
+
+.arrow {
+  border-left: 20px solid transparent;
+  border-top: 10px solid #c8c8c8;
+  left: 0;
+  line-height: 0;
+  position: absolute;
+  top: 100%;
+  width: 0; height: 0;
+} 
+
+/* Archive settings (body>container>row>col) */
+.fourcol a {
+  color: 
+
+/* Article settings (body>container>row>col) */
+article {
+  color: #191819; /****** this is the colour of the text, slightly darker than the footer ******/ 
+  float: left;
+  margin: auto;
+  padding: 10px;
+}
+
+article img
+{ float: left; height: 100px; margin-right: 20px; margin-top: 0; width: 100px; }
+
+/* Articlebody settings (body>container>row>col>article) */
+.articlebody {
+  float: left;
+  line-height: 18px;
+  margin: auto;
+  margin-bottom: 12px;
+  width: 500px;
+}
+
+.articlebody a {
+  font-size: 10px;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+/* Date settings within articlebody */
+.date {
+  font-size: 10px;
+}
+
+
+/* Archive settings - for Blog & Projects (body>container>row>col>archive) */
+.archive {
+  float: left;
+  margin: auto;
+  margin-bottom: 12px;
+  width: 300px;
+}
+
+/* Tag settings - for Blog, Projects, Reviews & Recipes (body>container>row>col) */
+.tag {
+  float: left;
+  margin-bottom: 12px;
+  width: 300px;
+}
+
+
+
+/****** COMMENT FORM SETTINGS (body>container>row>col) ******/
+form {
+  background-color: #6e7054;
+  float: left;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  width: 70%;
+}
+
+form li {
+  list-style: none;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+form p { size: 10px; }
+
+
+
+
+
